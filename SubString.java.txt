@@ -1,0 +1,18 @@
+
+public class SubString {
+	public static void main(String args[]){
+        String str = "xxxabxx";
+        String a = "xx";
+        int b = 0;
+        int c = 0;
+        System.out.println("Length= "+str.length());
+        while(b < str.length()-1){
+        	System.out.println("SUB = "+str.substring(b,b+2));
+            if(a.equals(str.substring(b,b+2))){
+              c++;
+            }
+            b++;
+        }
+          System.out.println(c);	
+    }
+}
